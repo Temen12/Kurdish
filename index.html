@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چاتی بۆتەکانی ئەنیمە</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>چاتی بۆتەکانی ئەنیمە</h1>
+</header>
+
+<main>
+    <section class="bot-selector">
+        <label for="bot">بۆتێک هەلبژێرە:</label>
+        <select id="bot">
+            <option value="scienceBot">بۆتی زانستی</option>
+            <option value="animeBot">بۆتی چیرۆکی</option>
+        </select>
+    </section>
+
+    <section class="image-upload">
+        <label for="imageInput">وێنەکە بنێرە:</label>
+        <input type="file" id="imageInput" accept="image/*">
+        <div id="imagePreview"></div>
+    </section>
+
+    <section id="chat-box"></section>
+
+    <section class="user-input">
+        <input type="text" id="message" placeholder="وشە بنووسە...">
+        <button id="send">ناردن</button>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
